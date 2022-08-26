@@ -17,7 +17,7 @@ at GitHub. Check live preview(link below).
 
 <h3>:eye_speech_bubble: Live demo</h3>
 
-Check live demonstration <a href="https://dorota1997.github.io/react-frontend-dev-portfolio/"><strong>here</strong></a>
+Check live demonstration <a href="https://coderrex-portfolio-project.netlify.app/"><strong>here</strong></a>
 
 <img width="100%" src="https://user-images.githubusercontent.com/60612329/186948448-f89c40cc-1ccd-4b5f-9024-ee9c0836b8c4.png" alt="react frontend dev portfolio preview"/>
 
