@@ -1,0 +1,118 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Alexander Odufuye. A Compulsive programmer who loves building :) I'm working with newest front-end framework called `React` What you are seeing now is my personal portfolio. If you like what you see, make sure to message me on linkedIn or through my email. Thank you for your time 💜",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "AirRover Rentals ",
+        "startDate": "2022",
+        "description": "This is the frontend of the AirRover Application. Users are able to register, login, and logout. Users are redirected to the login page if they aren't logged in. Users can create a reservation to book a specific Airplane and view them within the reservations page.",
+        "images": [
+          "images/portfolio/airRover/p1.png",
+          "images/portfolio/airRover/p2.png"
+        ],
+        "url": "https://github.com/Tumworobere/AirRovers-Frontend-App/tree/main",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-ruby-plain",
+            "name": "Ruby"
+          },
+          {
+            "class": "devicon-rails-plain",
+            "name": "Rails"
+          }
+        ]
+      },
+      {
+        "title": "React Covid Checker Africa",
+        "startDate": "2021",
+        "description": "This project is a Single Page Application (SPA) built with React and Redux. Data fetched from the API is stored in the Redux store and then filtered using a stateless Filter component. Each page (the home page and details for each country) has a unique route within the SPA. The project is deployed using Heroku and is accessible online",
+        "images": [
+          "images/portfolio/covid-checker/p1.png",
+          "images/portfolio/covid-checker/p2.png"
+        ],
+        "url": "https://github.com/alexander16108/React-Capstone#react-covid-checker-africa",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Space Traveler",
+        "startDate": "2021",
+        "description": "This project was bootstrapped with Create React App . In this task, we were working with the real live data from the SpaceX API. The task was to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier. The My Profile section displays all reserved rockets and space missions.",
+        "images": [
+          "images/portfolio/space-traveler/p1.png",
+          "images/portfolio/space-traveler/p2.png"
+        ],
+        "url": "https://github.com/nikoescobal/space-travelers",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-css-plain",
+            "name": "Css"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Microverse",
+        "title": "Technical Code Review",
+        "years": "12.2021 - present",
+        "mainTech": [
+          "React"
+        ],
+        "technologies": [
+          "REST API",
+          "Redux",
+          "JavaScript",
+          "Bootstrap",
+          "Ruby",
+          "Ruby on Rails",
+          "PostgreSql",
+          "Html and Css"
+        ]
+      },
+      {
+        "company": "Microverse",
+        "title": "Student Mentor",
+        "years": "03.2021 - present",
+        "mainTech": [
+          "Javascript"
+        ],
+        "technologies": [
+          "Html and Css",
+          "JavaScript"
+        ]
+      }
+    ]
+  }
