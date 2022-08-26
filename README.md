@@ -1,5 +1,4 @@
-<img width="80%" align="center" src="https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/images/images/portfolio_mockup.png" alt="portfolio template mockup" /> <br/>
-<img height="350px" align="right" src="https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/images/images/mobile-demo.gif" alt="portfolio mobile demo gif"/>
+<img width="50%" align="center" src="https://user-images.githubusercontent.com/60612329/186951126-1b184409-8d61-4bb9-9827-7629f07ac76b.svg" alt="portfolio template mockup" /> <br/>
 
 <img align="left" src="https://github.com/leungwensen/svg-icon/blob/master/dist/svg/logos/react.svg" height="50" alt="react icon"/>
 <h2>Alexander Portfolio</h2>
@@ -10,7 +9,7 @@ sections(about, exp, skills, projects), inspired with solutions found
 at GitHub. Check live preview(link below).
 </pre>
 
-<strong>:crown: advantages</strong>
+<strong>:crown: perks</strong>
 
 <img src="https://img.shields.io/badge/-multilingual-blue" alt="multilingual"/> &nbsp; <img src="https://img.shields.io/badge/-mobile friendly-blue" alt="mobile friendly"/> &nbsp; <img src="https://img.shields.io/badge/-light/dark mode-blue" alt="light/dark mode"/> &nbsp; <img src="https://img.shields.io/badge/-json fetched data-blue" alt="json fetched data"/> &nbsp; <img src="https://img.shields.io/badge/-minimalistic-blue" alt="minimalistic"/> &nbsp; <img src="https://img.shields.io/badge/-expandable-blue" alt="expandable"/>
 
@@ -20,7 +19,7 @@ at GitHub. Check live preview(link below).
 
 Check live demonstration <a href="https://dorota1997.github.io/react-frontend-dev-portfolio/"><strong>here</strong></a>
 
-<img width="100%" src="https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/images/images/react_portfolio_about.png" alt="react frontend dev portfolio preview"/>
+<img width="100%" src="https://user-images.githubusercontent.com/60612329/186948448-f89c40cc-1ccd-4b5f-9024-ee9c0836b8c4.png" alt="react frontend dev portfolio preview"/>
 
 <h3>:books: Getting started</h3>
 
@@ -31,8 +30,7 @@ Check live demonstration <a href="https://dorota1997.github.io/react-frontend-de
 ```
 // package.json
 {
-  "name": "react-frontend-dev-portfolio",
-  "homepage": "https://dorota1997.github.io/react-frontend-dev-portfolio/",   <-- remove/edit this
+  "name": "portfolio-project-v2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,9 +43,6 @@ Check live demonstration <a href="https://dorota1997.github.io/react-frontend-de
 
 <pre>
 ⚠️ Note that:
-- if you want to have portfolio on different repository than `{username}.github.io`, 
-set `homepage` in `package.json` to `https://{username}.github.io/{repository-name}/` 
-before deploying portfolio.
 - if you want to run it locally with <strong>npm run start</strong>, make sure that you have edited 
 homepage property or json data won't load.
 </pre>
@@ -64,5 +59,5 @@ homepage property or json data won't load.
 
 <h3>:gear: Contribution</h3>
 
-If you have any suggestions on what to improve in <em>react-frontend-dev-portfolio</em> and would like to share them, feel free to leave an issue or fork project to implement your own ideas :slightly_smiling_face:
+If you have any suggestions on what to improve in <em>portfolio-project-v2</em> and would like to share them, feel free to leave an issue or fork project to implement your own ideas :slightly_smiling_face:
 
