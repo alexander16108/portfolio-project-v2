@@ -1,4 +1,4 @@
-<img width="80%" align="center" src="https://github.com/alexander16108/porfolio-project-v2/images/mockup.jpg" alt="portfolio template mockup" /> <br/>
+<img width="50%" align="center" src="https://user-images.githubusercontent.com/60612329/186951126-1b184409-8d61-4bb9-9827-7629f07ac76b.svg" alt="portfolio template mockup" /> <br/>
 
 <img align="left" src="https://github.com/leungwensen/svg-icon/blob/master/dist/svg/logos/react.svg" height="50" alt="react icon"/>
 <h2>Alexander Portfolio</h2>
@@ -19,8 +19,7 @@ at GitHub. Check live preview(link below).
 
 Check live demonstration <a href="https://dorota1997.github.io/react-frontend-dev-portfolio/"><strong>here</strong></a>
 
-<img width="100%" src="https://user-images.githubusercontent.com/60612329/186948448-f89c40cc-1ccd-4b5f-9024-ee9c0836b8c4.png
-" alt="react frontend dev portfolio preview"/>
+<img width="100%" src="https://user-images.githubusercontent.com/60612329/186948448-f89c40cc-1ccd-4b5f-9024-ee9c0836b8c4.png" alt="react frontend dev portfolio preview"/>
 
 <h3>:books: Getting started</h3>
 
