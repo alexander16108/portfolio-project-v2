@@ -19,7 +19,7 @@ at GitHub. Check live preview(link below).
 
 Check live demonstration <a href="https://dorota1997.github.io/react-frontend-dev-portfolio/"><strong>here</strong></a>
 
-<img width="100%" src="![image](https://user-images.githubusercontent.com/60612329/186948448-f89c40cc-1ccd-4b5f-9024-ee9c0836b8c4.png)
+<img width="100%" src="https://user-images.githubusercontent.com/60612329/186948448-f89c40cc-1ccd-4b5f-9024-ee9c0836b8c4.png
 " alt="react frontend dev portfolio preview"/>
 
 <h3>:books: Getting started</h3>
