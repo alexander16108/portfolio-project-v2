@@ -1,0 +1,118 @@
+{
+    "basic_info": {
+      "description_header": "Salut",
+      "description": "👋 Je suis Alexandre Odufuye. Un programmeur compulsif qui aime construire :) Je travaille avec le nouveau framework frontal appelé `React` Ce que vous voyez maintenant est mon portefeuille personnel. Si vous aimez ce que vous voyez, assurez-vous de m'envoyer un message sur linkedIn ou via mon e-mail. Merci pour votre temps 💜",
+      "section_name": {
+        "about": "À propos de moi",
+        "projects": "Projets",
+        "skills": "Compétences",
+        "experience": "Vivre"
+      }
+    },
+    "projects": [
+      {
+        "title": "AirRover Rentals ",
+        "startDate": "2022",
+        "description": "Ceci est l'interface de l'application AirRover. Les utilisateurs peuvent s'inscrire, se connecter et se déconnecter. Les utilisateurs sont redirigés vers la page de connexion s'ils ne sont pas connectés. Les utilisateurs peuvent créer une réservation pour réserver un avion spécifique et les afficher sur la page des réservations.",
+        "images": [
+          "images/portfolio/airRover/p1.png",
+          "images/portfolio/airRover/p2.png"
+        ],
+        "url": "https://github.com/Tumworobere/AirRovers-Frontend-App/tree/main",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-ruby-plain",
+            "name": "Ruby"
+          },
+          {
+            "class": "devicon-rails-plain",
+            "name": "Rails"
+          }
+        ]
+      },
+      {
+        "title": "React Covid Checker Africa",
+        "startDate": "2021",
+        "description": "Ce projet est une application monopage (SPA) construite avec React et Redux. Les données extraites de l'API sont stockées dans le magasin Redux, puis filtrées à l'aide d'un composant sans état Filter. Chaque page (la page d'accueil et les détails pour chaque pays) a un itinéraire unique au sein du SPA. Le projet est déployé à l'aide de Heroku et est accessible en ligne",
+        "images": [
+          "images/portfolio/covid-checker/p1.png",
+          "images/portfolio/covid-checker/p2.png"
+        ],
+        "url": "https://github.com/alexander16108/React-Capstone#react-covid-checker-africa",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Space Traveler",
+        "startDate": "2021",
+        "description": "Ce projet a été démarré avec Create React App . Dans cette tâche, nous travaillions avec les données réelles en direct de l'API SpaceX. La tâche consistait à créer une application Web pour une entreprise qui fournit des services de voyages spatiaux commerciaux et scientifiques. L'application permettra aux utilisateurs de réserver des fusées et de rejoindre des missions spatiales sélectionnées. La section Fusées affiche une liste de toutes les fusées SpaceX disponibles. Les utilisateurs peuvent réserver chaque fusée en cliquant sur le bouton de réservation ou annuler la réservation effectuée précédemment. La section Missions affiche une liste des missions en cours avec leur brève description et leur statut de participation. Il y a aussi un bouton à côté de chaque mission qui permet aux utilisateurs de rejoindre la mission sélectionnée ou de quitter la mission que l'utilisateur a rejointe plus tôt. La section Mon profil affiche toutes les fusées et missions spatiales réservées.",
+        "images": [
+          "images/portfolio/space-traveler/p1.png",
+          "images/portfolio/space-traveler/p2.png"
+        ],
+        "url": "https://github.com/nikoescobal/space-travelers",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-css-plain",
+            "name": "Css"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Microverse",
+        "title": "Technical Code Review",
+        "years": "12.2021 - cadeau",
+        "mainTech": [
+          "React"
+        ],
+        "technologies": [
+          "REST API",
+          "Redux",
+          "JavaScript",
+          "Bootstrap",
+          "Ruby",
+          "Ruby on Rails",
+          "PostgreSql",
+          "Html and Css"
+        ]
+      },
+      {
+        "company": "Microverse",
+        "title": "mentor étudiant",
+        "years": "03.2021 - cadeau",
+        "mainTech": [
+          "Javascript"
+        ],
+        "technologies": [
+          "Html and Css",
+          "JavaScript"
+        ]
+      }
+    ]
+  }

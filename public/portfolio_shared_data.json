@@ -1,0 +1,73 @@
+{
+    "basic_info": {
+      "name": "Alexander Odufuye",
+      "titles": [ "Front-end Developer", "Back end Developer", "Full Stack Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/alexander16108",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedIn",
+          "url": "https://www.linkedIn.com/in/coderrex",
+          "class": "fab fa-linkedin"
+        },
+        {
+          "name": "Angellist",
+          "url": "https://www.angellist.com/codingrex",
+          "class": "fab fa-angellist"
+        }
+      ],
+      "image": "statue_hero.png"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "50"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Ruby",
+          "class": "devicon-ruby-plain",
+          "level": "50"
+        },
+        {
+          "name": "Sass",
+          "class": "devicon-sass-original",
+          "level": "75"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "Rails",
+          "class": "devicon-rails-plain",
+          "level": "45"
+        },
+        {
+          "name": "PostgreSql",
+          "class": "devicon-postgresql-plain",
+          "level": "60"
+        }
+      ]
+    }
+  }
