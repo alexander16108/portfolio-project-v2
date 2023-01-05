@@ -1,142 +1,100 @@
-import React, { Component } from "react";
-import $ from "jquery";
-import "./App.scss";
-import Header from "./components/Header";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  leadership,
+  skills,
+  getInTouch,
+  experiences
+} from "./editable-stuff/config.js";
+import MainBody from "./components/home/MainBody";
+import AboutMe from "./components/home/AboutMe";
+import Project from "./components/home/Project";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Navbar from "./components/Navbar";
+import Skills from "./components/home/Skills";
+import GetInTouch from "./components/home/GetInTouch.jsx";
+import Leadership from "./components/home/Leadership.jsx";
 
-class App extends Component {
+import Experience from "./components/home/Experience";
 
-  constructor(props) {
-    super();
-    this.state = {
-      foo: "bar",
-      resumeData: {},
-      sharedData: {},
-    };
-  }
-
-  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
-  }
-
-  swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
-
-  componentDidMount() {
-    this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
-    );
-  }
-
-  loadResumeFromPath(path) {
-    $.ajax({
-      url: path,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ resumeData: data });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  loadSharedData() {
-    $.ajax({
-      url: `portfolio_shared_data.json`,
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
-      }.bind(this),
-      error: function (xhr, status, err) {
-        alert(err);
-      },
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$primaryLanguage,
-                window.$secondaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon mr-5"
-              data-icon="twemoji-flag-for-flag-united-kingdom"
-              data-inline="false"
-              id={window.$primaryLanguageIconId}
-            ></span>
-          </div>
-          <div
-            onClick={() =>
-              this.applyPickedLanguage(
-                window.$secondaryLanguage,
-                window.$primaryLanguageIconId
-              )
-            }
-            style={{ display: "inline" }}
-          >
-            <span
-              className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-france"
-              data-inline="false"
-              id={window.$secondaryLanguageIconId}
-            ></span>
-          </div>
-        </div>
-        <About
-          resumeBasicInfo={this.state.resumeData.basic_info}
-          sharedBasicInfo={this.state.sharedData.basic_info}
+const Home = React.forwardRef((props, ref) => {
+  return (
+    <>
+      <MainBody
+        gradient={mainBody.gradientColors}
+        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
+        message={mainBody.message}
+        icons={mainBody.icons}
+        ref={ref}
+      />
+      {about.show && (
+        <AboutMe
+          heading={about.heading}
+          message={about.message}
+          link={about.imageLink}
+          imgSize={about.imageSize}
+          resume={about.resume}
         />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+      )}
+      {
+        experiences.show && (
+          <Experience experiences={experiences}/>
+        )
+      }
+      {repos.show && (
+        <Project
+          heading={repos.heading}
+          username={repos.gitHubUsername}
+          length={repos.reposLength}
+          specfic={repos.specificRepos}
         />
+      )}
+      {leadership.show && (
+        <Leadership
+          heading={leadership.heading}
+          message={leadership.message}
+          img={leadership.images}
+          imageSize={leadership.imageSize}
+        />
+      )}
+      {skills.show && (
         <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+          heading={skills.heading}
+          hardSkills={skills.hardSkills}
+          softSkills={skills.softSkills}
         />
-        <Experience
-          resumeExperience={this.state.resumeData.experience}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-      </div>
-    );
-  }
-}
+      )}
+      
+    </>
+  );
+});
+
+const App = () => {
+  const titleRef = React.useRef();
+
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+      {navBar.show && <Navbar ref={titleRef} />}
+      <Routes>
+        <Route path="/" exact element={<Home ref={titleRef} />} />
+      </Routes>
+      {/* {false && <Route path="/blog" exact component={Blog} />}
+      {false && <Route path="/blog/:id" component={BlogPost} />} */}
+      <Footer>
+        {getInTouch.show && (
+          <GetInTouch
+            heading={getInTouch.heading}
+            message={getInTouch.message}
+            email={getInTouch.email}
+          />
+        )}
+      </Footer>
+    </BrowserRouter>
+  );
+};
 
 export default App;
